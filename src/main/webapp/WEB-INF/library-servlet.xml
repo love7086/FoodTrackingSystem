@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<import resource="/library-webflow.xml" />
+
+	<bean
+		class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
+
+	<bean name="/updateEnd1.htm" class="com.foodtrackingsystem.controller.ajaxController" />
+	<bean name="/updateEnd2.htm" class="com.foodtrackingsystem.controller.ajaxController2" />
+</beans>

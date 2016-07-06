@@ -1,0 +1,15 @@
+<flow xmlns="http://www.springframework.org/schema/webflow"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/webflow
+http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+	<view-state id="updateProfile1">
+		<transition on="next" to="updateProfile2" />
+	</view-state>
+
+	<view-state id="updateProfile2" model="user">
+		<transition on="next" to="updateProfile3" />
+		<transition on="back" to="updateProfile1" />
+	</view-state>
+	<end-state id="updateProfile3" view="updateProfile3.jsp"/>
+
+</flow>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         " http://www.hibernate.org/dtd/hibernate-configuration">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/foodtrackingsystem</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">123456</property>
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<mapping class="com.foodtrackingsystem.pojo.User" />
+		<mapping class="com.foodtrackingsystem.pojo.Network" />
+		<mapping class="com.foodtrackingsystem.pojo.Person" />
+<!-- 		<mapping class="com.foodtrackingsystem.pojo.Enterprise" /> -->
+		<mapping class="com.foodtrackingsystem.pojo.WorkRequest" />
+		<mapping class="com.foodtrackingsystem.pojo.Food" />
+		<mapping class="com.foodtrackingsystem.pojo.Supplier" />
+		<mapping class="com.foodtrackingsystem.pojo.Customer" />
+		<mapping class="com.foodtrackingsystem.pojo.Comment" />
+		<mapping class="com.foodtrackingsystem.pojo.TransportationCompany" />
+		<mapping class="com.foodtrackingsystem.pojo.Transportation" />
+
+
+	</session-factory>
+</hibernate-configuration>

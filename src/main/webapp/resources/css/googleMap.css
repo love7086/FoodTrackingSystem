@@ -1,0 +1,30 @@
+@media  (max-width: 500px) {
+    #googleMap {
+        width:200px;
+        height:200px
+    }
+}
+@media  (max-width: 700px) and (min-width:500px) {
+    #googleMap {
+        width:400px;
+        height:300px
+    }
+}
+
+@media  (max-width: 1000px) and (min-width:700px) {
+    #googleMap {
+        width:600px;
+        height:450px
+    }
+}
+
+@media  (max-width: 1920px) and (min-width:1000px) {
+    #googleMap {
+        width:900px;
+        height:600px
+    }
+}
+#googleMap{
+	float:left;
+	margin-right:30px;
+}

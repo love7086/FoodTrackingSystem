@@ -1,0 +1,34 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.foodtrackingsystem.pojo.role;
+
+/**
+ *
+ * @author asus
+ */
+public abstract class Role {
+
+	public enum RoleType {
+
+		Customer("Customer"), Retailer("Retailer"), Supplier("Supplier"), SystemAdmin(
+				"SystemAdmin"), TransportationCompany("TransportationCompany");
+		private String value;
+
+		private RoleType(String value) {
+			this.value = value;
+		}
+
+		public String getValue() {
+			return value;
+		}
+
+		@Override
+		public String toString() {
+			return value;
+		}
+	}
+
+}
