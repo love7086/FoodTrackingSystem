@@ -23,7 +23,7 @@ import com.foodtrackingsystem.pojo.User;
 
 @Controller
 public class AdminController extends MyController {
-
+	//Updated at 2017.8.18
 	@RequestMapping(value = "/addNetwork1.htm")
 	public ModelAndView redirectToAddNetwork(HttpServletRequest request, HttpServletResponse response)
 			throws AdException {
